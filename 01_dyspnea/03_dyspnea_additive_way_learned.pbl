@@ -1,0 +1,21 @@
+0.15::visited_asia.
+0.24899598::tuberculosis :- visited_asia.
+0.02352941::tuberculosis.
+
+0.55::smoker.
+0.10743802::lung_cancer :- smoker.
+0.02222222::lung_cancer.
+
+0.47402597::bronchitis :- smoker.
+0.37777778::bronchitis.
+
+1::e :- lung_cancer.
+1::e :- tuberculosis.
+0::e.
+
+1::xray_positive :- e.
+0.03488372::xray_positive.
+
+0.59086099::dyspnea :- e.
+0.72219857::dyspnea :- bronchitis.
+0.1257155::dyspnea.

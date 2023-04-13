@@ -7,7 +7,28 @@
 %
 %  should become:
 %
-%   0.2::a :- b.
 %   0.1::a :- c.
 %   0.15::a.
 %
+
+0.01::visited_asia.
+0.05::tuberculosis :- visited_asia.
+0.01::tuberculosis.
+
+0.5::smoker.
+0.1::lung_cancer :- smoker.
+0.01::lung_cancer.
+
+0.6::bronchitis :- smoker.
+0.3::bronchitis.
+
+1::e :- lung_cancer.
+1::e :- tuberculosis.
+0::e.
+
+0.98::xray_positive :- e.
+0.05::xray_positive.
+
+0.7::dyspnea :- e.
+0.8::dyspnea :- bronchitis.
+0.1::dyspnea.
