@@ -1,6 +1,8 @@
-0.15::calcium.
-0.85::bisphosphonates.
+0.5::calcium.
+0.5::bisphosphonates.
 
-succesful_treatment :- calcium, \+ bisphosphonates.
-succesful_treatment :- bisphosphonates, \+ calcium.
+\+bisphosphonates:-calcium.
+
+0.15::succesful_treatment :- calcium, \+ bisphosphonates.
+0.85::succesful_treatment :- bisphosphonates, \+ calcium.
 0.075::succesful_treatment :- calcium, bisphosphonates.
