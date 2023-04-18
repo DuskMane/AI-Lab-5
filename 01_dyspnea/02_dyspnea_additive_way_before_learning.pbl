@@ -1,4 +1,3 @@
-
 t(_)::visited_asia.
 t(_)::tuberculosis :- visited_asia.
 t(_)::tuberculosis.
